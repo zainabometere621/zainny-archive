@@ -1,7 +1,7 @@
 export default function FilterBar() {
     return(
-        <main>
+        <section>
             <h1>Tis is the filter bar page</h1>
-        </main>
+        </section>
     )
 }

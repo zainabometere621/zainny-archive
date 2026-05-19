@@ -279,3 +279,6 @@ export const looks: Look[] = [
     tags: ["gown", "purple", "dramatic"],
   },
 ];
+export async function getLooks(): Promise<Look[]> {
+  return looks
+}

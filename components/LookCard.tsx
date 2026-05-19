@@ -1,9 +1,9 @@
 export default function LookCard() {
     return(
-        <main>
+        <section>
             <h2>
                 Tis is the look card page
             </h2>
-        </main>
+        </section>
     )
 }
