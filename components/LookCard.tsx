@@ -27,7 +27,7 @@ export default function LookCard({ look }: LookCardProps) {
           <p className="text-[#c9a84c] text-base uppercase tracking-widest mb-1">
             {look.category}
           </p>
-          <p className="text-[#fdf6f0] text-base leading-tight">{look.name}</p>
+          <h2 className="text-[#fdf6f0] text-base leading-tight">{look.name}</h2>
         </div>
         {/* heart button */}
         <button onClick={(e) =>{
