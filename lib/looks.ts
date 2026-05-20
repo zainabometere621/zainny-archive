@@ -52,13 +52,13 @@ export const looks: Look[] = [
     category: "cargo",
     description:
       "High waist deep blue denim cargo jeans with utility pockets. Street style done with intention — casual but completely unbothered.",
-    image: "/cargo1.jpg",
+    image: "/jean2.jpg",
     tags: ["cargo", "indigo", "streetstyle"],
   },
   {
     id: 7,
     name: "Olive Skirt",
-    category: "jean",
+    category: "skirt",
     description:
       "An olive green cargo midi skirt with a front slit and utility pockets. The perfect balance between effortless and edgy.",
     image: "/jean1.jpg",
@@ -94,7 +94,7 @@ export const looks: Look[] = [
   {
     id: 11,
     name: "Midi Skirt",
-    category: "cargo",
+    category: "skirt",
     description:
       "An olive green cargo midi skirt with a front slit and deep utility pockets. Minimal effort, maximum edge.",
     image: "/cargo2.jpg",
@@ -120,30 +120,30 @@ export const looks: Look[] = [
   },
   {
     id: 14,
-    name: "Fuchsia Ankara",
-    category: "ankara",
-    description:
-      "A fitted ankara gown with bold fuchsia prints, a mermaid silhouette and dramatic flared sleeves. She came, she saw, she conquered.",
-    image: "/ankara2.jpg",
-    tags: ["ankara", "fuchsia", "mermaid"],
-  },
-  {
-    id: 15,
-    name: "Sage Denim",
+    name: "flowy skirt",
     category: "two-piece",
     description:
       "A sage green linen shirt and flowing maxi skirt set with bow sleeve details. Modest, fresh and completely effortless.",
-    image: "/jean2.jpg",
+    image: "/skirt2.jpg",
     tags: ["two-piece", "sage", "modest"],
   },
   {
-    id: 16,
+    id: 15,
     name: "Velvet Gown",
     category: "gown",
     description:
       "A dramatic purple ball gown with sheer balloon sleeves and a brocade skirt. Made for moments that are remembered forever.",
     image: "/gown2.jpg",
     tags: ["gown", "purple", "dramatic"],
+  },
+  {
+    id: 16,
+    name: "monochrome  Cargo",
+    category: "cargo",
+    description:
+      "Black wide leg cargo trousers in a bold monochrome print paired with a sleek satin wrap blouse. Effortlessly unbothered, undeniably powerful.",
+    image: "/cargo1.jpg",
+    tags: ["cargo", "monochrome", "streetstyle"],
   },
 ];
 export async function getLooks(): Promise<Look[]> {

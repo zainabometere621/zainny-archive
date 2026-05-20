@@ -5,6 +5,7 @@ import { useState } from "react";
 import { getLooks } from "../lib/looks";
 import Hero from "../components/Hero";
 import FilterBar from "../components/FilterBar";
+import LookCard from "../components/LookCard";
 
 export default function Page() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -31,6 +32,13 @@ export default function Page() {
         activeFilter={activeFilter}
         setActiveFilter={setActiveFilter}
       />
+      <div className="grid grid-cols-3 gap-1 bg-[#e8d5c4]">
+        {filtered?.map((look, index) => (
+          <div key={look.id}>
+            <LookCard  look={look} />
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
