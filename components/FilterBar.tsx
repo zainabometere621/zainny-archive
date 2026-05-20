@@ -17,7 +17,7 @@ export default function FilterBar({
         "ankara",
         "bubu",
         "cargo",
-        "jean",
+        "skirt",
         "formal",
       ].map((cat) => (
         <button

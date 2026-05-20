@@ -12,12 +12,12 @@ export default async function LookDetail({ params }: Props) {
   const look = looks.find((l) => l.id === Number(id));
   if (!look)
     return (
-      <div className="flex items-center justify-center text-[#6b1f3a]">
+      <div className="flex items-center justify-center h-screen text-[#6b1f3a]">
         Look not found
       </div>
     );
   return (
-    <main className="bg-[#fdf6f0] ">
+    <main className="bg-[#fdf6f0] min-h-screen ">
       {/* back to look button */}
       <div className="px-8 py-6 border-b border[#9b7b6e]">
         <Link
@@ -29,9 +29,9 @@ export default async function LookDetail({ params }: Props) {
         </Link>
       </div>
       {/* details column */}
-      <div className="grid grid-cols-2">
+      <div className="grid lg:grid-cols-2 gap-4">
         {/* image */}
-        <div className="relative aspect-[3/4] min-h-[600px] w-[600px]">
+        <div className="relative aspect-[3/4] min-h-[600px]">
           <Image
             src={look.image}
             alt={look.name}
@@ -40,7 +40,7 @@ export default async function LookDetail({ params }: Props) {
           />
         </div>
         {/* image details */}
-        <div className="p-12 flex flex-col justify-center bg-[#fdf6f0]">
+        <div className="p-12 flex flex-col items bg-[#fdf6f0]">
           <p className=" uppercase text-sm text-[#c9a84c] tracking-widest mb-4">
             {look.category}
           </p>

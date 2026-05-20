@@ -32,7 +32,7 @@ export default function Page() {
         activeFilter={activeFilter}
         setActiveFilter={setActiveFilter}
       />
-      <div className="grid grid-cols-3 gap-1 bg-[#e8d5c4]">
+      <div className="grid lg:grid-cols-3 gap-1 bg-[#e8d5c4]">
         {filtered?.map((look, index) => (
           <div key={look.id}>
             <LookCard  look={look} />

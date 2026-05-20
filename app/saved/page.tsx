@@ -33,7 +33,7 @@ export default function SavedLooks() {
         </div>
       ) : (
         // saved looks
-        <div className="grid grid-cols-3 gap-1 bg-[#e8d5c4]">
+        <div className="grid lg:grid-cols-3 gap-1 bg-[#e8d5c4]">
           {savedLooks.map((look) => (
             <div key={look.id} className="relative group">
               <Link href={`look/${look.id}`}>
