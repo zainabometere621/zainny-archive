@@ -17,7 +17,7 @@ export default async function LookDetail({ params }: Props) {
       </div>
     );
   return (
-    <main className="bg-[#fdf6f0] min-h-screen">
+    <main className="bg-[#fdf6f0] ">
       {/* back to look button */}
       <div className="px-8 py-6 border-b border[#9b7b6e]">
         <Link
@@ -29,9 +29,9 @@ export default async function LookDetail({ params }: Props) {
         </Link>
       </div>
       {/* details column */}
-      <div className="grid grid-cols-2 h-1/2">
+      <div className="grid grid-cols-2">
         {/* image */}
-        <div className="relative aspect-[3/4]">
+        <div className="relative aspect-[3/4] min-h-[600px] w-[600px]">
           <Image
             src={look.image}
             alt={look.name}
@@ -40,19 +40,25 @@ export default async function LookDetail({ params }: Props) {
           />
         </div>
         {/* image details */}
-        <div>
-            <p>
-                {look.category}
-            </p>
-            <p>
-                {look.name}
-            </p>
-            <p>
-                {look.description}
-            </p>
-            <p>
-                {look.tags}
-            </p>
+        <div className="p-12 flex flex-col justify-center bg-[#fdf6f0]">
+          <p className=" uppercase text-sm text-[#c9a84c] tracking-widest mb-4">
+            {look.category}
+          </p>
+          <h1 className="text-4xl leading-tight text-[#3D0E1F] mb-4 ">
+            {look.name}
+          </h1>
+          <p className="text-sm text-[#7a3d52] font-light leading-relaxed mb-8">
+            {look.description}
+          </p>
+          {/* tags */}
+          <div className="flex gap-2 flex-wrap mb-8">
+            {look.tags.map((tag) => (
+              <span key={tag} className="text-xs px-3 py-1 rounded-full border border-[#d4b5a8] text-[#7a3d52]">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <SaveButton look={look}/>
         </div>
       </div>
     </main>
