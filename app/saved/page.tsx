@@ -19,14 +19,14 @@ export default function SavedLooks() {
       {/* place holder */}
       {savedLooks.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-24 gap-4">
-          <Heart className="h-8 w-8" />
-          <p className="text-2xl text-[#6b1f3a]">Your archive is empty</p>
-          <p className="text-sm text-[#9b7b6e] font-light">
+          <Heart className="h-8 lg:h-10 w-8 lg:w-10" />
+          <p className="text-2xl lg:text-3xl text-[#6b1f3a]">Your archive is empty</p>
+          <p className="text-sm lg:text-base text-[#9b7b6e] font-light">
             Start saving looks you love and they'll appear here
           </p>
           <Link
             href="/"
-            className="mt-4 bg-[#6b1f3a] text-[#f2d4d7] uppercase text-xs px-6 py-3 tracking widest"
+            className="mt-4 bg-[#6b1f3a] text-[#f2d4d7] uppercase text-xs lg:text-sm px-6 py-3 tracking widest"
           >
             Discover looks
           </Link>
