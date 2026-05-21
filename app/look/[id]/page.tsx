@@ -17,7 +17,7 @@ export default async function LookDetail({ params }: Props) {
       </div>
     );
   return (
-    <main className="bg-[#fdf6f0] h-screen ">
+    <main className="bg-[#fdf6f0] min-h-screen ">
       {/* back to look button */}
       <div className="px-8 py-6 border-b border[#9b7b6e]">
         <Link
