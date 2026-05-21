@@ -4,15 +4,15 @@ export default function Hero() {
   return (
     <section className="">
       <div className="flex flex-col items-center justify-center space-y-6 bg-[#f2d4d7] py-16">
-        <p className="uppercase text-xs lg:text-lg font-medium text-[#9b4e6b] ">
+        <p className="uppercase text-base lg:text-lg font-medium text-[#9b4e6b] ">
           modern / modest 2026
         </p>
         <div className="space-y-2">
-          <h1 className="font-bold text-5xl lg:text-7xl text-center text-[#3d0e1f]">Welcome to the</h1>
-          <h1 className="uppercase text-[#6b1f3a] font-bold text-center text-5xl lg:text-7xl">
+          <h1 className="font-bold text-3xl lg:text-7xl text-center text-[#3d0e1f]">Welcome to the</h1>
+          <h1 className="uppercase text-[#6b1f3a] font-bold text-center text-3xl lg:text-7xl">
             zainny archives
           </h1>
-          <p className="text-base lg:text-lg font-medium tracking-widest text-[#9b4e6b] text-center">Where every look tells a story</p>
+          <p className="text-base lg:text-lg font-medium tracking-wider text-[#9b4e6b] text-center">Where every look tells a story</p>
         </div>
         <hr className="w-16 h-0.5 border-none rounded bg-[#c9a84c] " />
         <div className="flex gap-14 items-center">
