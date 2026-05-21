@@ -10,9 +10,9 @@ export default function SavedLooks() {
 
   return (
     <main className="bg-[#fdf6f0] min-h-screen">
-      <div className="px-8 py-8">
-        <h1 className="text-3xl text-[#3d0e1f]"> Your Saved Looks</h1>
-        <p className="text-sm text-[#9b7b6e] font-light mt-1">
+      <div className="px-8 lg:px-16 py-6">
+        <h1 className="text-xl lg:text-4xl text-[#3d0e1f]"> Your Saved Looks</h1>
+        <p className="text-xs lg:text-base text-[#9b7b6e] font-light mt-1 lg:mt-2">
           Looks you've fallen in love with
         </p>
       </div>

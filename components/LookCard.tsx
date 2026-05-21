@@ -24,10 +24,10 @@ export default function LookCard({ look }: LookCardProps) {
          {/* gradient */}
          <div className="absolute inset-0 bg-gradient-to-t from-[#3d0e1f] via-transparent to-transparent"/>
         <div className="absolute bottom-0 left-0 right-0 p-4">
-          <p className="text-[#c9a84c] text-base uppercase tracking-widest mb-1">
+          <p className="text-[#c9a84c] text-base lg:text-lg uppercase tracking-widest mb-1">
             {look.category}
           </p>
-          <h2 className="text-[#fdf6f0] text-base leading-tight">{look.name}</h2>
+          <h2 className="text-[#fdf6f0] text-base lg:text-lg leading-tight">{look.name}</h2>
         </div>
         {/* heart button */}
         <button onClick={(e) =>{

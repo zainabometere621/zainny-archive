@@ -6,17 +6,17 @@ import { useSaved } from "@/lib/Context";
 export default function Navbar() {
   const { savedLooks } = useSaved();
   return (
-    <header className="bg-[#fdf6f0] border-b border-[#E8D5C4] flex items-center justify-between px-8 h-14 ">
-      <Link href="/" className="uppercase font-semibold text-[#6b1f3a] text-xl">
+    <header className="bg-[#fdf6f0] border-b border-[#E8D5C4] flex items-center justify-between px-8 lg:px-16 h-14 lg:h-20 ">
+      <Link href="/" className="uppercase font-semibold text-[#6b1f3a] text-base lg:text-4xl">
         <h1>zainny archives</h1>
       </Link>
-      <nav className="flex space-x-4">
-        <Link href="/" className="text-sm text-[#9b7b6e] hover:text-[#6b1f3a]">
+      <nav className="flex space-x-6">
+        <Link href="/" className="text-sm lg:text-lg text-[#9b7b6e] hover:text-[#6b1f3a]">
           Discover
         </Link>
         <Link
           href="/saved"
-          className=" text-sm text-[#9b7b6e] hover:text-[#6b1f3a] "
+          className=" text-sm lg:text-lg text-[#9b7b6e] hover:text-[#6b1f3a] "
         >
           Saved Looks
         </Link>
@@ -24,10 +24,10 @@ export default function Navbar() {
       {/* saved looks count */}
       <Link
         href="/"
-        className="bg-[#6b1f3a] flex items-center gap-1 px-4 py-3 rounded-2xl"
+        className="bg-[#6b1f3a] flex items-center gap-1 px-4 py-3 rounded-full"
       >
         <Heart className="h-3 w-3 text-[#f2d4d7]" />
-        <p className="text-xs font-medium text-[#f2d4d7]">
+        <p className="text-xs lg:text-lg font-medium text-[#f2d4d7]">
           Saved ({savedLooks.length})
         </p>
       </Link>
