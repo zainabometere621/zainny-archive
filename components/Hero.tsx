@@ -9,7 +9,7 @@ export default function Hero() {
         </p>
         <div className="space-y-2">
           <h1 className="font-bold text-3xl lg:text-7xl text-center text-[#3d0e1f]">Welcome to the</h1>
-          <h1 className="uppercase text-[#6b1f3a] font-bold text-center text-3xl lg:text-7xl">
+          <h1 className="uppercase text-[#6b1f3a] font-bold text-center text-4xl lg:text-7xl">
             zainny archives
           </h1>
           <p className="text-base lg:text-lg font-medium tracking-wider text-[#9b4e6b] text-center">Where every look tells a story</p>
