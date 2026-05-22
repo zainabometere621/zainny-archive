@@ -9,7 +9,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#fdf6f0] border-b border-[#E8D5C4] relative">
+    <header className=" sticky top-0 z-50 bg-[#fdf6f0] border-b border-[#E8D5C4] relative">
       <div className="flex items-center justify-between px-8 lg:px-16 h-14 lg:h-20">
         {/* Logo */}
         <Link
